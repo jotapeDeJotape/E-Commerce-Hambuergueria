@@ -1,0 +1,17 @@
+.divTotal{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.buttonRemove{
+    width: 90%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: var(--gray-20);
+    border: none;
+    color: var(--gray-100);
+    font-weight: bold;
+    border: 8px;
+}
+

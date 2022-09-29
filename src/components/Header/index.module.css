@@ -1,0 +1,43 @@
+.mainHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background-color: var(--gray-0);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.mainSpan{
+    background-color: var(--gray-0);
+    width: 90%;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 8px;
+    border: 2px solid rgba(224, 224, 224, 1);
+}
+.mainSpan > input{
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: none;
+}
+
+@media (min-width:768px){
+    .mainHeader{
+        display: flex;
+        flex-direction: row;
+        height: 80px;
+        justify-content: space-around;
+        gap: 700px;
+    }
+    .mainSpan{
+        width: 23%;
+        height: 30px;
+    }
+}

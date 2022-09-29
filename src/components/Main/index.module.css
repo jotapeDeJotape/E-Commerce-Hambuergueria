@@ -1,0 +1,140 @@
+.mainSec{
+    background-color: rgba(255, 255, 255, 1);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainDivList{
+    width: 90%;
+    height: 100%;
+    padding: 16px;
+}
+.mainList{
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.listItems{
+    min-width: 85%;
+    height: 346px;
+    border: 2px solid rgba(224, 224, 224, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 8px;
+}
+
+.FigureMain{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray-0);
+}
+.Figure > img{
+    width: 177px;
+    height: 177px;
+}
+.mainCarr{
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    margin-top: 16px;
+}
+.startCarr{
+    background-color: var(--color-primary);
+    width: 90%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    height: 45px;
+}
+
+.startCarr > h1{
+    color: var(--gray-0);
+}
+.carrList{
+    width: 292px;
+    height: 280px;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background-color: var(--gray-0);
+    border-bottom: 2px solid var(--gray-20);
+    margin-bottom: 10px;
+}
+
+.carrItem{
+    max-width: 90%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    padding: 8px;
+}
+.figureCarr{
+    background-color: var(--gray-20);
+    width: 80px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.figureCarr > img{
+    width: 50px;
+    height: 50px;
+}
+.carrText{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px; 
+}
+.carrText > button{
+    background: none;
+    border: none;
+    opacity: 60%;
+}
+
+@media (min-width:768px){
+    .mainSec{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 8px;
+    }
+    .mainList{
+        display: flex;
+        overflow: unset;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .listItems{
+        min-width: 260px;
+        height: 300px;
+    }
+    .mainCarr{
+        width: 365px;
+        height: 530px;
+    }
+    .carrList{
+        width: 281px;
+    }
+
+
+}
