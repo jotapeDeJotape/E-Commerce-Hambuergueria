@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 
 export const StyledTitle = styled.h1`
     font-weight: bold;
+   
     /* ${({fontSize}) => {
         switch(fontSize){
             case 'one':
@@ -42,6 +43,10 @@ export const StyledTitle = styled.h1`
         else if(props.fontSize === 'three'){
             return css`
                 font-size: 18px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 150px;
                 `
         }
         else if(props.fontSize === 'four'){
@@ -63,6 +68,7 @@ export const StyledTitle = styled.h1`
             return css`
                 font-weight: 600;
                 font-size: 14px;
+                margin-top: 20px;
             `
         }else if(props.fontSize === 'Caption'){
             return css`

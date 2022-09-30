@@ -8,7 +8,6 @@
 
 .mainDivList{
     width: 90%;
-    height: 100%;
     padding: 16px;
 }
 .mainList{
@@ -32,15 +31,15 @@
 
 .FigureMain{
     width: 100%;
-    height: 150px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--gray-0);
 }
-.Figure > img{
-    width: 177px;
-    height: 177px;
+.FigureMain > img{
+    width: 190px;
+    height: 190px;
 }
 .mainCarr{
     width: 96%;
@@ -65,7 +64,7 @@
 }
 .carrList{
     width: 292px;
-    height: 280px;
+    height: 380px;
     overflow-x: auto;
     display: flex;
     flex-direction: column;
@@ -84,6 +83,7 @@
     gap: 8px;
     border: none;
     padding: 8px;
+    animation: AppearItem 0.5s ease-in-out;
 }
 .figureCarr{
     background-color: var(--gray-20);
@@ -110,30 +110,48 @@
     opacity: 60%;
 }
 
+
+@keyframes AppearItem{
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1.025);
+    }
+}
+
+
 @media (min-width:768px){
     .mainSec{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: flex-start;
-        padding: 8px;
+        padding: 40px;
+        height: 100vh;
+    }
+    .mainDivList{
+        max-height: 100%;
+        width: 1300px;
     }
     .mainList{
         display: flex;
         overflow: unset;
         flex-direction: row;
         flex-wrap: wrap;
+        max-height: 100%;
     }
     .listItems{
-        min-width: 260px;
-        height: 300px;
+        min-width: 300px;
+        height: 380px;
     }
     .mainCarr{
-        width: 365px;
-        height: 530px;
+        width: 35%;
+        height: 800px;
     }
     .carrList{
-        width: 281px;
+        width: 94%;
+        height: 500px;
     }
 
 

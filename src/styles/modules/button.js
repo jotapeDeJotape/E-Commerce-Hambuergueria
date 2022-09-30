@@ -12,6 +12,7 @@ export const StyledButton = styled.button`
                 background-color: var(--color-primary);
                 color: var(--gray-0);
                 width: 30%;
+
         `
         }else if(props.Button === 'Button'){
             return css`
@@ -19,6 +20,11 @@ export const StyledButton = styled.button`
                 background-color: var(--color-primary);
                 color: var(--gray-0);
                 width: 40%;
+                :hover{
+                    transition: 0.5s;
+                    transform: scale(1.010);
+                    filter: brightness(110%);
+                }
         `
         }
     })}

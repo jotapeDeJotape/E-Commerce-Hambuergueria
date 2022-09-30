@@ -15,17 +15,19 @@
     border-radius: 8px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 5px;
     padding: 8px;
     border: 2px solid rgba(224, 224, 224, 1);
 }
 .mainSpan > input{
-    height: 40px;
+    height: 20px;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     background: none;
+    outline: none;
+    padding: 8px;
 }
 
 @media (min-width:768px){
@@ -34,10 +36,11 @@
         flex-direction: row;
         height: 80px;
         justify-content: space-around;
-        gap: 700px;
+        gap: 120px;
+        width: 100%;
     }
     .mainSpan{
-        width: 23%;
+        width: 325px;
         height: 30px;
     }
 }
